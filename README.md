@@ -13,5 +13,5 @@ Install the requirements by running the following command in the terminal or com
 ```bash
 pip install -r requirements.txt
 
-## Run
+
 python borsa_istanbul_tweet.py
