@@ -28,12 +28,11 @@ schedule.every().friday.at("16:30", "Europe/Paris").do(main)
 
 
 if __name__ == "__main__":
-    try:
-        while True:
+    while True:
+        try:
             schedule.run_pending()
             time.sleep(1)
-    except Exception as e:
-        send_email(e)
-        
+        except Exception as e:
+            send_email(e)
     
         

@@ -2,9 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 
 name_increasing = []
+name_increasing10 = name_increasing[0:10]
 name_decreasing = []
+name_decreasing10 = name_decreasing[0:10]
 highest_price = []
+highest_price10 = highest_price[0:10]
 least_price = []
+least_price10 = least_price[0:10]
 url1 = "https://uzmanpara.milliyet.com.tr/borsa/en-cok-artanlar/"
 url2 = "https://uzmanpara.milliyet.com.tr/borsa/en-cok-azalanlar/?seans=gun"
 
