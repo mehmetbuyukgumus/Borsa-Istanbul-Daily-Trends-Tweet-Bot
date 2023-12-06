@@ -18,9 +18,9 @@ my_username = os.getenv("myUsername")
 my_password = os.getenv("myPassword")
 
 def connetion_to_account():
-    # options = Options()
-    # options.add_argument("--headless")
-    browser = webdriver.Firefox()
+    options = Options()
+    options.add_argument("--headless")
+    browser = webdriver.Firefox(options=options)
     browser.get("https://twitter.com/?lang=tr")
     time.sleep(1)
     browser.delete_all_cookies()
