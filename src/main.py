@@ -8,7 +8,7 @@ from data_scrapping.datas import  ratio_increasing, ratio_decrasing
 from data_scrapping.datas import  url1, url2
 from twitter.twitter import connetion_to_account, tweeting_increasing, tweeting_decrasing
 from errors import send_email
-
+ 
 def main():
     tweets = connetion_to_account()
     conn1 = connection_increasing(url1)
@@ -22,7 +22,7 @@ def main():
 
 schedule.every().monday.at("16:30", "Europe/Paris").do(main)
 schedule.every().tuesday.at("16:30", "Europe/Paris").do(main)
-schedule.every().wednesday.at("16:30", "Europe/Paris").do(main)
+schedule.every().wednesday.at("16:30", "Europe/Paris").do(main) 
 schedule.every().thursday.at("16:30", "Europe/Paris").do(main)
 schedule.every().friday.at("16:30", "Europe/Paris").do(main)
 
