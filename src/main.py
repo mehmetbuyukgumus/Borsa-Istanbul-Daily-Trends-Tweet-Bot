@@ -34,5 +34,3 @@ if __name__ == "__main__":
             time.sleep(1)
         except Exception as e:
             send_email(e)
-    
-        
