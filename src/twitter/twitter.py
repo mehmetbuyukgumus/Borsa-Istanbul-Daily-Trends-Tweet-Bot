@@ -4,7 +4,6 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.firefox.options import Options
 import time
 from datetime import datetime
-import locale
 import os
 from dotenv import load_dotenv
 import sys
@@ -26,11 +25,11 @@ def connetion_to_account():
     browser.delete_all_cookies()
     time.sleep(1)
     time.sleep(2)
-    selecet_cookies = browser.find_element(By.XPATH, "/html/body/div[1]/div/div/div[1]/div/div/div/div/div/div[2]/div[2]/div/span/span")
+    # selecet_cookies = browser.find_element(By.XPATH, "/html/body/div[1]/div/div/div[1]/div/div/div/div/div/div[2]/div[2]/div/span/span")
     time.sleep(1)
-    selecet_cookies.click()
+    # selecet_cookies.click()
     time.sleep(1)
-    sign_in_button = browser.find_element(By.XPATH, "/html/body/div[1]/div/div/div[2]/main/div/div/div[1]/div[1]/div/div[3]/div[5]/a/div/span/span")
+    sign_in_button = browser.find_element(By.XPATH, "/html/body/div/div/div/div[2]/main/div/div/div[1]/div[1]/div/div[3]/div[5]/a/div/span/span")
     sign_in_button.click()
     time.sleep(2)
     username = browser.find_element(By.XPATH, "/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input")
